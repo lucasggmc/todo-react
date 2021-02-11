@@ -1,16 +1,28 @@
 import React from 'react';
-import TodoContext from '../contexts/TodoContext';
 import Navbar from './Navbar';
 import TodoList from './TodoList';
+import TodoContext from '../contexts/TodoContext';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import AddTodo from './AddTodo';
 
 const App = () => {
     return (
         <TodoContext>
-        <div className="container-fluid">
-            <Navbar></Navbar>
-            <h1>Meu Primeiro App</h1> 
-            <TodoList></TodoList>           
-        </div>  
+            <Router>
+                <Navbar></Navbar>
+                <br />
+                <div className="container-fluid">
+                    <Switch>
+                        <Route path="/create">
+                            <AddTodo></AddTodo>
+                        </Route>
+                        <Route path="/">
+                            <h4>Minha lista de tarefas</h4>
+                            <TodoList></TodoList>
+                        </Route> 
+                    </Switch>        
+                </div>  
+            </Router>
         </TodoContext>
     );
 }
