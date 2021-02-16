@@ -27,7 +27,8 @@ const TodoListItem = (props: TodoListItemProps) => {
             </td>
             <td>{props.todo.title}</td>
             <td>
-                <button className="btn btn-danger" onClick={() => onRemove(props.todo)}>Remover</button>
+                {/* <button className="btn btn-danger" onClick={() => onRemove(props.todo)}>Remover</button> */}
+                <a href="#"><i className="fas fa-trash-alt text-danger"  onClick={() => onRemove(props.todo)}></i></a>
             </td>
         </tr>
     );
