@@ -9,19 +9,15 @@ export const ContainerCenter = styled.div`
     align-items: center;
 `;
 
-export const Card = styled.div`
-    //background: orange;
+
+export const Card = styled.div`    
     width: auto;
     min-width: 300px;
     margin: 15px;
     height: 300px;
-
+    
+    padding: 1.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 25%);
+    border: 1px solid #f5f6fe;    
     background: #fff;
-    border-radius: 4px;
-    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
-    //max-width: 400px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 25px;
-    position: relative;
 `;

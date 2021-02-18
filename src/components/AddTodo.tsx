@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { TodoContextType } from '../contexts/TodoContextType';
+import { Card, ContainerCenter } from './general/styles';
 
 
 const schema = yup.object().shape({
@@ -27,16 +28,20 @@ const AddTodo = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit<AddTodoForm>(onSubmit)}>
-            <h4>Nova tarefa</h4>
-            <div className="uk-margin uk-width-1-1">
-                <input type="text" name="title" id="title" placeholder="Nova tarefa..." className="uk-input" ref={register} />
-                <span><small><strong className="uk-text-danger">{errors.title?.message}</strong></small></span>
-            </div>
-            <div className="uk-width-1-1">
-                <button type="submit" className="uk-button uk-button-primary">Salvar</button>
-            </div>
-        </form>
+        <ContainerCenter>
+            <Card>
+                <form onSubmit={handleSubmit<AddTodoForm>(onSubmit)}>
+                    <h4 className="text-blue">Nova tarefa</h4>
+                    <div className="form-group">
+                        <input type="text" name="title" id="title" placeholder="Nova tarefa..." className="form-control" ref={register} />
+                        <span><small><strong className="text-danger">{errors.title?.message}</strong></small></span>
+                    </div>
+                    <div className="d-flex justify-content-end">
+                        <button type="submit" className="btn btn-primary">Salvar</button>
+                    </div>
+                </form>
+            </Card>
+        </ContainerCenter>
     )
 }
 
