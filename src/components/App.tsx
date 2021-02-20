@@ -8,7 +8,7 @@ import AddTodo from './AddTodo';
 const App = () => {
     return (
         <TodoContext>
-            <Router>
+            <Router basename="/todo-react">
                 <Navbar></Navbar>
                 <br />
                 <div className="container-fluid">

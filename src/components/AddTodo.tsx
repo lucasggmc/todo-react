@@ -24,7 +24,7 @@ const AddTodo = () => {
     const onSubmit = (data: AddTodoForm, e: any) => {
         addTodo(data.title)
         e.target.reset()
-        window.location.href = '/'
+        window.location.href = '/todo-react'
     }
 
     return (
