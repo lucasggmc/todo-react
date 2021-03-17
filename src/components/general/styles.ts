@@ -11,16 +11,23 @@ export const ContainerCenter = styled.div`
 
 
 export const Card = styled.div`    
-    width: auto;
+    height: 100%;
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 60px rgb(0 0 0 / 5%);
+    padding: 1.5rem 2rem;
+    
+    text-align: center;
+
+    /* width: auto;
     min-width: 300px;
     margin: 15px;
-    min-height: 300px;
-    height: auto;
+    min-height: 300px;    
     
     padding: 1.5rem;
     box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
     border: 1px solid #f5f6fe;    
-    background: #fff;
+    background: #fff; */
 `;
 
 export const CircleIcon = styled.div`
@@ -33,8 +40,8 @@ export const CircleIcon = styled.div`
     padding-top: 15px;
 `;
 
-export const Title = styled.h1`
-    color: #252930;
-    font-size: 1.3rem;
-    font-weight: bold;
+export const Title = styled.h4`
+    color: var(--text);
+    /* font-size: 1.3rem; */
+    /* font-weight: bold; */
 `;

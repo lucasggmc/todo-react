@@ -1,0 +1,21 @@
+
+:root{
+    --background: #f2f3f5;
+    --red: #e83f5b;
+    --white: #fff;
+    --text: #666666;   
+    --title: #2e384d;
+}
+
+body {
+    background: var(--background);
+}
+
+body, input, textarea, button {
+    /* font: 400 16px "Inter", sans-serif;  */
+    font-family: 'Poppins', sans-serif;
+}
+
+.todo-title {
+    color: var(--text);
+}

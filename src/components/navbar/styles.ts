@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const General = styled.div`
     background-color: white;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 5%);
 `;
 

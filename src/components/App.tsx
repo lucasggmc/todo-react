@@ -4,6 +4,7 @@ import TodoList from './todo-list/TodoList';
 import TodoContext from '../contexts/TodoContext';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AddTodo from './AddTodo';
+import '../styles/global.css';
 
 const App = () => {
     return (

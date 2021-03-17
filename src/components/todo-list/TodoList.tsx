@@ -11,15 +11,16 @@ const TodoList = () => {
     return(
         <ContainerCenter>
             <Card>
+                <h4 className="todo-title" style={{ marginBottom: 15}}>Minha lista de tarefas</h4>
                 <table className="table">
-                    {/* <caption>Lista de tarefas</caption> */}
-                    <thead>
+                    {/* <caption>Lista de tarefas</caption> */} 
+                    {/* <thead>
                         <tr>
                             <th>Status</th>
                             <th>Descrição</th>
                             <th></th>
                         </tr>
-                    </thead>
+                    </thead> */}
                     <tbody>
                         {
                             todos?.map(
